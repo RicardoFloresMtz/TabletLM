@@ -1,0 +1,81 @@
+<script>
+    $.getScript("js/login.js");
+    $.getScript("js/validacionesLogin.js");
+</script>
+
+    <div class="row altura_general" >
+            <div class="col-sm-12 " align="center" style="height: 10%;">    </div>
+            <div class="col-sm-12 " align="center" > 
+                <label class="titulo_login">Log in</label>
+            </div>
+            <div class="col-sm-12 " align="center"> 
+                    <hr class="hr_login">
+            </div>
+            <div class="col-sm-12 " align="center" style="height: 10%;">    </div>
+            <div class="col-sm-12 " align="center" > 
+                    <img src="img/GFB-logo.png" alt="Grupo Financiero BANORTE." style= "width: 45%;">
+            </div>
+            <div class="col-sm-12 " align="center" style="height: 10%;">    </div>
+            <div  id="accesoUsrPass" class="col-sm-12 " align="center" style=" display: block; height: 36%;"> 
+                    <div class="row">
+                        <div  class="col-sm-12" align="center">
+                            <input type="text" id="txtUsr" class="input_login_usr" placeholder="Usuario" oninput="validaUsuario()" maxlength="10">
+                           
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <div  class="col-sm-12" align="center">
+                                    <input type="password" id="txtPass" class="input_login_pass" placeholder="Password" oninput="validaPass()">
+  
+                            </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <div  class="col-sm-12" align="center">
+                                <button type="btn" class="btn btn-lg btn_entrar" id="btnLogin" disabled="true" onclick="LogIn()">Entrar</button>
+                            </div>
+                    </div> <br>
+                    <div class="row">
+                            <div  class="col-sm-12" align="center">
+                                <a class="link_forgetpass">¿Olvidaste tu constraseña?</a>
+                            </div>
+                    </div>
+                
+            </div>
+            <div  id="accesoHuella" class="col-sm-12" align="center" style="display: none; height: 36%;"> 
+                   
+                            <div class="row">
+                                <div  class="col-sm-12" align="right">
+                                        <h4 class="link_forgetpass" >Hola ,</h4> 
+                                </div>
+                                <div  class="col-sm-12" align="left" style="padding-left: 0%;">
+                                        <h4 class="lb_login_white">Hèctor</h4>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                    <div  class="col-sm-12" align="center">
+                                            <img src="img/fingerprint.png" alt="Huella Digital." style= "width: 10%;">
+                                    </div>
+                                </div>
+                            <div class="row">
+                                    <div  class="col-sm-12" align="center">
+                                           <h3 class="link_forgetpass">Acessa con tu huella</h3>
+                                           <label class="lb_login_white">(coloca en el sensor tu dedo)</label>
+                                    </div>
+                            </div>
+                            <br><br><br><br>
+                            <div class="row">
+                                    <div  class="col-sm-12" align="center">
+                                            <a class="lb_login_white">&oacute; inicia sesi&oacute;n con otra cuenta</a>
+                                    </div>
+                            </div> <br>
+                            <div class="row">
+                                    <div  class="col-sm-12" align="center">
+                                        <a class="link_forgetpass ">¿Olvidaste tu constraseña?</a>
+                                    </div>
+                            </div>
+                        
+            </div>
+    </div>

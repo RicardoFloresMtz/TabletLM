@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+	  Some notes:
+	      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+	      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+	      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+	          * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+
+  <!-- Uncomment the following line if you are migrating an app from Legacy to MFP Cordova -->
+  <link rel="stylesheet" type="text/css" href="plugins/cordova-plugin-mfp/worklight/worklight.css" > 
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" > 
+  <link rel="stylesheet" type="text/css" href="css/EstilosGenerales.css" />
+  <script type="text/javascript" src="js/assets/bluebird.min.js"></script>
+  <script type="text/javascript" src="js/assets/jquery.min.js"></script>
+  <script type="text/javascript" src="js/assets/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/assets/jquery.twbsPagination.js"></script>
+  <script type="text/javascript" src="js/assets/jquery.twbsPagination.min.js"></script>
+  <!-- load script with wlCommonInit defined before loading cordova.js -->
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/operacionesRest.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+
+  <title>TabletLM</title>
+</head>
+
+<body>
+  <!--<label id="geolocation" style="color: red"></label>-->
+  <div id="pageBody" class="altura_general"></div>
+    <!-- Modal Start here-->
+    <div class="modal fade" id="modal_please_wait" tabindex="-1"
+        role="dialog" aria-hidden="true" data-backdrop="static"
+        loading-indicator>
+      <div class="modal-dialog sumando-loading-modal-dialog">
+        <div class="modal-content" align="center" style=" padding-top: 25%;"> 
+          <img  width="100%" id="imgGif" src="img/loader.svg"/>
+        </div>
+      </div>
+    </div>
+  <!-- Modal ends Here -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="errorAviso" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <p style="text-align: center;" id="msjError1">El
+            servicio no esta disponible, por favor intentelo mas tarde.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btnPadding" id="btnAceptarIndex"
+            data-dismiss="modal" style="background: #FF9900; color: white;"
+            >ACEPTAR</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="modal fade in" id="errorModal" role="dialog" style="padding-top: 2%; padding-bottom: 3%; padding-left: 0px;">
+      <div class="modal-dialog" style="height: 100%;">
+      <div class="row">
+              <div class="col-xs-12 col-sm-12" style=" padding-left: 96%;" align="right">
+                      <img src="img/close.png" alt="Grupo Financiero BANORTE." style="width: 50px;" data-dismiss="modal" id="imgclose">
+              </div>
+      </div>
+          <!-- Modal content-->
+        <div class="modal-content" style="height: 30%;">
+              <div class="modal-header modalheader_aviso" >
+                     <div class="row" style="height: 10%;"> </div>
+                     <div class="row">
+                         <div class="col-xs-2 col-sm-2" align="center">
+                              <img src="img/incidence.png" alt="Grupo Financiero BANORTE." style="width: 65%;">
+                         </div>
+                         <div class="col-xs-8 col-sm-8 " align="center">
+                            <h2 class="h2_title">Aviso</h2>
+                         </div>
+                         <div class="col-xs-2 col-sm-2">  </div>
+                     </div>     
+              </div>
+              <div class="modal-body" style="height: 70%;"> 
+                <p class="p_modal_aviso" id="msjError"></p>  
+              </div>   
+          </div>
+      </div>
+  </div>
+</body>
+</html>

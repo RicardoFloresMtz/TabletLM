@@ -1,0 +1,12 @@
+{
+	"base.ipad" : "2223817679",
+	"base.iphone" : "2223817679",
+	"base.android" : "4189346558",
+	"base.windowsphone8" : "1364080985",
+	"common.android" : "4051389091",
+	"fipshttp.iphone" : "4248177343",
+	"fipshttp.android" : "710669907",
+	"jsonstore.android" : "1392316424",
+	"jsonstore.windowsphone8" : "1302343779",
+	"wl_version" : "8.0.0.00-20180504-092633"
+}
