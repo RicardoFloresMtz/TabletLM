@@ -44,7 +44,7 @@ function getFileSuccess(fileEntry) {
 
 function setVersionConsole(){
   WL.App.getServerUrl(function (url) {
-    console.log("VERSION: 1.0.0, 24/05/2018 Servidor:" + url )
+    console.log("VERSION: 1.0.1, 24/05/2018 Servidor:" + url )
     $("#modal_please_wait").modal("hide");
   });
 }

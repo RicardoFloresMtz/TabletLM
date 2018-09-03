@@ -5,5 +5,4 @@ function getProductosXCliente(sic, nomCliente){
     document.getElementById('paginadorCliente').style="display:none";
     document.getElementById('resumeCliente').innerHTML= nomCliente + ", "+ sic ;
     
-    
 }
