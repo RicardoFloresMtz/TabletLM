@@ -1,3 +1,6 @@
+<script>
+        $.getScript("js/collapse.js");
+</script>
 
 <div class="row">
     <div class="col-sm-12" align="center">
@@ -65,10 +68,10 @@
                         <img src="img/productos.png" alt="produsctos.png" style="width: 109%;" onclick="getProductosXCliente(document.getElementById('lbNumCliente').textContent, document.getElementById('lbNomCliente').textContent)"> 
                 </div>
                 <div class="col-sm-2 imgOpe_infoCliente" >  
-                        <img src="img/autorizar.png" alt="autorizar.png" style="width: 109%;">
+                        <img src="img/autorizar.png" alt="autorizar.png" style="width: 109%;" onclick="goAutoriza()">
                 </div>
                 <div class="col-sm-2 imgOpe_infoCliente" >  
-                        <img src="img/turno.png" alt="turno.png" style="width: 109%;"> 
+                        <img src="img/turno.png" alt="turno.png" style="width: 109%;" onclick="goEmitTicket()"> 
                 </div>
                 
 </div>
