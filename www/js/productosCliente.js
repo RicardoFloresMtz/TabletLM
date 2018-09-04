@@ -70,9 +70,17 @@ function crearLista(producto) {
     console.log(producto)
     var ul = document.createElement("ul");
     var li = document.createElement("li");
-    var ejemplo = document.createTextNode("ejemplo");
 
-    li.appendChild(ejemplo);
+    var textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
+    var textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
+    var textoTipoInterviniente = document.createTextNode("Tipo Interviniente" + producto.DescripcionProducto);
+    var textoSecuencia = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
+
+    li.appendChild(textoNumCuenta);
+    li.appendChild(textoNombreProducto);
+    li.appendChild(textoTipoInterviniente);
+    li.appendChild(textoSecuencia);
+
     ul.appendChild(li);
 
     var div = document.getElementById("listaProductos");
