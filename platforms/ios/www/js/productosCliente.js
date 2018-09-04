@@ -39,29 +39,42 @@ function getProductos(sic) {
 
 }
 
+// function crearLista(producto) {
+
+//     var div = document.createElement("div");
+//     var lista = document.createElement("li");
+//     var aNumCuenta = document.createElement("a");
+//     var aNombreProducto = document.createElement("a");
+//     var aTipoInter = document.createElement("a");
+//     var aSecuencia = document.createElement("a");
+
+//     const textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
+//     const textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
+//     const textoTipoInterviniente = document.createTextNode("Tipo Interviniente" + producto.DescripcionProducto);
+//     const textoSecuencia = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
+
+//     document.appendChild(div, lista);
+//     document.appendChild(lista, aNumCuenta);
+//     document.appendChild(lista, aNombreProducto);
+//     document.appendChild(lista, aTipoInter);
+//     document.appendChild(lista, aSecuencia);
+
+//     document.appendChild(aNumCuenta, textoNumCuenta);
+//     document.appendChild(aNombreProducto, textoNombreProducto);
+//     document.appendChild(aTipoInter, textoTipoInterviniente);
+//     document.appendChild(aSecuencia, textoSecuencia);
+
+// }
+
 function crearLista(producto) {
+    console.log(producto)
+    var ul = document.createElement("ul");
+    var li = document.createElement("li");
+    var ejemplo = document.createTextNode("ejemplo");
 
-    var div = document.createElement("div");
-    var lista = document.createElement("li");
-    var aNumCuenta = document.createElement("a");
-    var aNombreProducto = document.createElement("a");
-    var aTipoInter = document.createElement("a");
-    var aSecuencia = document.createElement("a");
+    li.appendChild(ejemplo);
+    ul.appendChild(li);
 
-    const textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
-    const textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
-    const textoTipoInterviniente = document.createTextNode("Tipo Interviniente" + producto.DescripcionProducto);
-    const textoSecuencia = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
-
-    document.appendChild(div, lista);
-    document.appendChild(lista, aNumCuenta);
-    document.appendChild(lista, aNombreProducto);
-    document.appendChild(lista, aTipoInter);
-    document.appendChild(lista, aSecuencia);
-
-    document.appendChild(aNumCuenta, textoNumCuenta);
-    document.appendChild(aNombreProducto, textoNombreProducto);
-    document.appendChild(aTipoInter, textoTipoInterviniente);
-    document.appendChild(aSecuencia, textoSecuencia);
-
+    var div = document.getElementById("listaProductos");
+    div.appendChild(ul);
 }
