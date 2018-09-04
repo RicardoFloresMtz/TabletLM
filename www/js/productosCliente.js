@@ -3,6 +3,7 @@ function getProductosXCliente(sic, nomCliente) {
     $("#modalPageBody").load("html/productosCliente.html");
 
     setTimeout(function() {
+        $('#modal_please_wait').modal('show');
         document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
         document.getElementById('paginadorCliente').style = "display:none";
         document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
@@ -12,11 +13,12 @@ function getProductosXCliente(sic, nomCliente) {
 }
 
 function getProductos(sic) {
-    $('#modal_please_wait').modal('show');
+    
+    console.log("funcion getProductos");
     consultarProductosCliente(sic).then(
         function(respProductos) {
             var respProductos_json = respProductos.responseJSON;
-            var productosArray = respProductos_json.arrayProductos;
+            var productosArray = respProductos_json.Productos;
             console.log(respProductos_json);
             console.log(productosArray);
             if (respProductos_json.Id === "1") {
@@ -28,8 +30,7 @@ function getProductos(sic) {
             } else {
                 $('#modal_please_wait').modal('hide');
                 $('#errorModal').modal('show');
-                document.getElementById('msjError').innerHTML = resp1_json.MensajeAUsuario;
-                WLAuthorizationManager.logout('banorteSecurityCheckLM');
+                document.getElementById('msjError').innerHTML = respProductos_json.MensajeAUsuario;
             }
 
 
@@ -50,7 +51,7 @@ function crearLista(producto) {
     const textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
     const textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
     const textoTipoInterviniente = document.createTextNode("Tipo Interviniente" + producto.DescripcionProducto);
-    const textoTipoInterviniente = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
+    const textoSecuencia = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
 
     document.appendChild(div, lista);
     document.appendChild(lista, aNumCuenta);
@@ -61,6 +62,6 @@ function crearLista(producto) {
     document.appendChild(aNumCuenta, textoNumCuenta);
     document.appendChild(aNombreProducto, textoNombreProducto);
     document.appendChild(aTipoInter, textoTipoInterviniente);
-    document.appendChild(aSecuencia, aSecuencia);
+    document.appendChild(aSecuencia, textoSecuencia);
 
 }

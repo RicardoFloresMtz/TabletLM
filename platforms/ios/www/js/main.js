@@ -238,5 +238,6 @@ function esSICTarjetaCuenta(tam_texto){
         document.getElementById("msjError").innerHTML="Este servicio est&aacute; en construcci&oacute;n";
         $('#errorModal').modal('show');
     }
+    
 
     
