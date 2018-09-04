@@ -60,7 +60,7 @@
     </mfp:windows>
     <mfp:platformVersion>8.0.0.00-20180504-092633</mfp:platformVersion>
     <mfp:clientCustomInit enabled="false" />
-    <mfp:server runtime="mfp" url="http://192.168.15.106:9080" />
+    <mfp:server runtime="mfp" url="http://192.168.15.115:9080" />
     <mfp:directUpdateAuthenticityPublicKey />
     <mfp:languagePreferences>en</mfp:languagePreferences>
     <plugin name="cordova-plugin-mfp" spec="^8.0.2018050404" />

@@ -111,7 +111,22 @@ function consultaPerfilEmpleado(opc) {
 
 }
 
-function errorPromise(error){
+
+function consultarProductosCliente(sic) {
+    var formParameters = {
+        sic: sic
+    };
+
+    var resourceRequest = new WLResourceRequest(
+        'adapters/AdapterBanorteTabletLM/resource/consultarProductosCliente',
+        WLResourceRequest.POST);
+    resourceRequest.setTimeout(30000);
+
+    return resourceRequest.sendFormParameters(formParameters);
+
+}
+
+function errorPromise(error) {
     $('#modal_please_wait').modal('hide');
     $('#errorModal').modal('show');
     if (error.errorCode === 'API_INVOCATION_FAILURE') {
