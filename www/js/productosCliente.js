@@ -1,18 +1,12 @@
 function getProductosXCliente(sic, nomCliente) {
     console.log(sic + nomCliente);
-    $("#modalPageBody").load("html/productosCliente.html");
-
-    setTimeout(function() {
-        $('#modal_please_wait').modal('show');
-        document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
-        document.getElementById('paginadorCliente').style = "display:none";
-        document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
-        getProductos(sic);
-    }, 1000);
+    $('#modal_please_wait').modal('show');
+        getProductos(sic, nomCliente);
+   
 
 }
 
-function getProductos(sic) {
+function getProductos(sic, nomCliente,) {
     
     console.log("funcion getProductos");
     consultarProductosCliente(sic).then(
@@ -22,10 +16,15 @@ function getProductos(sic) {
             console.log(respProductos_json);
             console.log(productosArray);
             if (respProductos_json.Id === "1") {
+                $("#modalPageBody").load("html/productosCliente.html");
+                
+                document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
+                document.getElementById('paginadorCliente').style = "display:none";
+                document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
                 productosArray.forEach(producto => {
                     console.log(producto);
                     crearLista(producto);
-
+                    $('#modal_please_wait').modal('hide');
                 });
             } else {
                 $('#modal_please_wait').modal('hide');
@@ -34,54 +33,44 @@ function getProductos(sic) {
             }
 
 
+        },function(error){
+            console.log(error);
+            $('#modal_please_wait').modal('hide');
+            $('#errorModal').modal('show');
+            if (error.errorCode === 'API_INVOCATION_FAILURE') {
+                document.getElementById('msjError').innerHTML = 'Tu sesión ha expirado';
+            } else {
+              document.getElementById('msjError').innerHTML = 'El servicio no esta disponible, favor de intentar mas tarde';
+            }
         }
+        
     );
 
 }
 
-// function crearLista(producto) {
-
-//     var div = document.createElement("div");
-//     var lista = document.createElement("li");
-//     var aNumCuenta = document.createElement("a");
-//     var aNombreProducto = document.createElement("a");
-//     var aTipoInter = document.createElement("a");
-//     var aSecuencia = document.createElement("a");
-
-//     const textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
-//     const textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
-//     const textoTipoInterviniente = document.createTextNode("Tipo Interviniente" + producto.DescripcionProducto);
-//     const textoSecuencia = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
-
-//     document.appendChild(div, lista);
-//     document.appendChild(lista, aNumCuenta);
-//     document.appendChild(lista, aNombreProducto);
-//     document.appendChild(lista, aTipoInter);
-//     document.appendChild(lista, aSecuencia);
-
-//     document.appendChild(aNumCuenta, textoNumCuenta);
-//     document.appendChild(aNombreProducto, textoNombreProducto);
-//     document.appendChild(aTipoInter, textoTipoInterviniente);
-//     document.appendChild(aSecuencia, textoSecuencia);
-
-// }
-
 function crearLista(producto) {
     console.log(producto)
     var ul = document.createElement("ul");
-    var li = document.createElement("li");
+    var li_Cuenta = document.createElement("li");
+    var li_Nombre = document.createElement("li");
+    var li_Descrip = document.createElement("li");
+    var li_Secuencia = document.createElement("li");
+
 
     var textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
     var textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
-    var textoTipoInterviniente = document.createTextNode("Tipo Interviniente" + producto.DescripcionProducto);
-    var textoSecuencia = document.createTextNode("Secuencia Interviniente" + producto.SecuenciaIntervin);
+    var textoTipoInterviniente = document.createTextNode("Tipo Interviniente: " + producto.TipoInterviniente);
+    var textoSecuencia = document.createTextNode("Secuencia Interviniente: " + producto.SecuenciaIntervin);
 
-    li.appendChild(textoNumCuenta);
-    li.appendChild(textoNombreProducto);
-    li.appendChild(textoTipoInterviniente);
-    li.appendChild(textoSecuencia);
+    li_Cuenta.appendChild(textoNumCuenta);
+    li_Nombre.appendChild(textoNombreProducto);
+    li_Descrip.appendChild(textoTipoInterviniente);
+    li_Secuencia.appendChild(textoSecuencia);
 
-    ul.appendChild(li);
+    ul.appendChild(li_Cuenta);
+    ul.appendChild(li_Nombre);
+    ul.appendChild(li_Descrip);
+    ul.appendChild(li_Secuencia);
 
     var div = document.getElementById("listaProductos");
     div.appendChild(ul);
