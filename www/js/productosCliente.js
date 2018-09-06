@@ -1,13 +1,12 @@
 function getProductosXCliente(sic, nomCliente) {
     console.log(sic + nomCliente);
     $('#modal_please_wait').modal('show');
-        getProductos(sic, nomCliente);
-   
+    getProductos(sic, nomCliente);
 
 }
 
 function getProductos(sic, nomCliente) {
-    
+
     console.log("funcion getProductos");
     consultarProductosCliente(sic).then(
         function(respProductos) {
@@ -17,37 +16,35 @@ function getProductos(sic, nomCliente) {
             console.log(productosArray);
             if (respProductos_json.Id === "1") {
                 $("#modalPageBody").load("html/productosCliente.html");
-                setTimeout(
-                    function(){
-                        document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
-                        document.getElementById('paginadorCliente').style = "display:none";
-                        document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
-                    }
-                ,1000);
-                
+                setTimeout(function() {
+                    document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
+                    document.getElementById('paginadorCliente').style = "display:none";
+                    document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
+                }, 1000);
+
+
                 productosArray.forEach(producto => {
                     console.log(producto);
                     crearLista(producto);
-                    $('#modal_please_wait').modal('hide');
                 });
+
+                $('#modal_please_wait').modal('hide');
             } else {
                 $('#modal_please_wait').modal('hide');
                 $('#errorModal').modal('show');
                 document.getElementById('msjError').innerHTML = respProductos_json.MensajeAUsuario;
             }
-
-
-        },function(error){
+        },
+        function(error) {
             console.log(error);
             $('#modal_please_wait').modal('hide');
             $('#errorModal').modal('show');
             if (error.errorCode === 'API_INVOCATION_FAILURE') {
                 document.getElementById('msjError').innerHTML = 'Tu sesión ha expirado';
             } else {
-              document.getElementById('msjError').innerHTML = 'El servicio no esta disponible, favor de intentar mas tarde';
+                document.getElementById('msjError').innerHTML = 'El servicio no esta disponible, favor de intentar mas tarde';
             }
         }
-        
     );
 
 }

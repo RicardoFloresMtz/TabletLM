@@ -134,4 +134,13 @@ function errorPromise(error) {
     } else {
       document.getElementById('msjError').innerHTML = 'El servicio no esta disponible, favor de intentar mas tarde';
     }
-  }
+}
+
+function mascaraNumeroCuenta(numCtaSel) {
+
+    const tamNumCta = numCtaSel.length;
+    const numCta_aux = numCtaSel.substring(tamNumCta - 4, tamNumCta);
+    const numCuenta_show = '******' + numCta_aux;
+
+    return numCuenta_show;
+}
