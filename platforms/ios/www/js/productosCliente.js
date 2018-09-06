@@ -1,12 +1,12 @@
 function getProductosXCliente(sic, nomCliente) {
     console.log(sic + nomCliente);
     $('#modal_please_wait').modal('show');
-        getProductos(sic);
+        getProductos(sic, nomCliente);
    
 
 }
 
-function getProductos(sic) {
+function getProductos(sic, nomCliente) {
     
     console.log("funcion getProductos");
     consultarProductosCliente(sic).then(
@@ -17,10 +17,14 @@ function getProductos(sic) {
             console.log(productosArray);
             if (respProductos_json.Id === "1") {
                 $("#modalPageBody").load("html/productosCliente.html");
+                setTimeout(
+                    function(){
+                        document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
+                        document.getElementById('paginadorCliente').style = "display:none";
+                        document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
+                    }
+                ,1000);
                 
-                document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
-                document.getElementById('paginadorCliente').style = "display:none";
-                document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
                 productosArray.forEach(producto => {
                     console.log(producto);
                     crearLista(producto);
