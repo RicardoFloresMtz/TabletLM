@@ -1,5 +1,5 @@
 function getProductosXCliente(sic, nomCliente) {
-    console.log(sic + nomCliente);
+    // console.log(sic + nomCliente);
     $('#modal_please_wait').modal('show');
     getProductos(sic, nomCliente);
 
@@ -12,21 +12,25 @@ function getProductos(sic, nomCliente) {
         function(respProductos) {
             var respProductos_json = respProductos.responseJSON;
             var productosArray = respProductos_json.Productos;
-            console.log(respProductos_json);
-            console.log(productosArray);
+            // console.log(respProductos_json);
+            // console.log(productosArray);
+            console.log("Consulta productos cliente trae respuesta");
             if (respProductos_json.Id === "1") {
                 $("#modalPageBody").load("html/productosCliente.html");
                 setTimeout(function() {
                     document.getElementById('tituloModalOperaciones').innerHTML = "Productos Relacionados";
                     document.getElementById('paginadorCliente').style = "display:none";
                     document.getElementById('resumeCliente').innerHTML = nomCliente + ", " + sic;
-                }, 1000);
+                }, 500);
 
-
-                productosArray.forEach(producto => {
-                    console.log(producto);
-                    crearLista(producto);
-                });
+                setTimeout(
+                    function(){
+                        productosArray.forEach(producto => {
+                            //console.log(producto);
+                            crearLista(producto);
+                        });
+                    }, 500);
+                
 
                 $('#modal_please_wait').modal('hide');
             } else {
@@ -36,7 +40,8 @@ function getProductos(sic, nomCliente) {
             }
         },
         function(error) {
-            console.log(error);
+            // console.log(error);
+            console.log("Consulta productos cliente trae respuesta");
             $('#modal_please_wait').modal('hide');
             $('#errorModal').modal('show');
             if (error.errorCode === 'API_INVOCATION_FAILURE') {
@@ -50,7 +55,7 @@ function getProductos(sic, nomCliente) {
 }
 
 function crearLista(producto) {
-    console.log(producto)
+   // console.log(producto);
     var ul = document.createElement("ul");
     var li_Cuenta = document.createElement("li");
     var li_Nombre = document.createElement("li");
@@ -58,7 +63,7 @@ function crearLista(producto) {
     var li_Secuencia = document.createElement("li");
 
 
-    var textoNumCuenta = document.createTextNode(producto.EntidadCuenta);
+    var textoNumCuenta = document.createTextNode(mascaraNumeroCuenta(producto.EntidadCuenta));
     var textoNombreProducto = document.createTextNode(producto.DescripcionProducto);
     var textoTipoInterviniente = document.createTextNode("Tipo Interviniente: " + producto.TipoInterviniente);
     var textoSecuencia = document.createTextNode("Secuencia Interviniente: " + producto.SecuenciaIntervin);

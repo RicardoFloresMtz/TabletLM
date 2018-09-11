@@ -14,11 +14,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		gBBsIvcNEVEQzoH4RwL4+kh0cPs=
+		AE2G3iFfVsrXNaT0ZhE0sXJcqnY=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		YMThu5MxIWdVxzT13C7UOD6B0HQ=
+		wwOIbRuDFy2ZzAGbpzxlihin4lA=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		yydhG1oz8ZZhAMkvJPNqfp/wgac=
+		dyOo4GqXiDN5L9aKo2oYMmDoTiU=
 		</data>
 		<key>CDVNotification.bundle/beep.wav</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Frameworks/IBMMobileFirstPlatformFoundation.framework/IBMMobileFirstPlatformFoundation</key>
 		<data>
-		MS4KJ/RNnSgEPAffJSuzrK3mzHg=
+		AdebGXQlupvbuyit43wMMbhME78=
 		</data>
 		<key>Frameworks/IBMMobileFirstPlatformFoundation.framework/Info.plist</key>
 		<data>
@@ -286,7 +286,7 @@
 		</dict>
 		<key>MainViewController.nib</key>
 		<data>
-		PcR32kSv/PalWW9E9kpjWg6zRTA=
+		9UQ9ngUaYKfROzAXXLVzZitxOis=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -298,11 +298,11 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		lnX+iKG01moym81ElvinOqyIOMM=
+		yWRB4qwIymRK50SXcrWvqHpZj5A=
 		</data>
 		<key>mfpclient.plist</key>
 		<data>
-		y5XR6P1bhT1bMZZZxBUUq/xoObQ=
+		XqerqtSU/a72/rNPf4oz8Gv0Ng4=
 		</data>
 		<key>www/cordova-js-src/exec.js</key>
 		<data>
@@ -390,11 +390,11 @@
 		</data>
 		<key>www/html/login.html</key>
 		<data>
-		jkBB4OeBLBeOjL+lJ6ndgZqo2Pc=
+		CH0MsEDg8/pOvO0PI8zo3Rd1dSg=
 		</data>
 		<key>www/html/main.html</key>
 		<data>
-		VoEGqowr3hDSyy0ZQyvp4inuZis=
+		uqDbHCAaRzMEEZoLjhP8SA2MKL4=
 		</data>
 		<key>www/html/productosCliente.html</key>
 		<data>
@@ -570,19 +570,19 @@
 		</data>
 		<key>www/js/index.js</key>
 		<data>
-		gcdXNUow47PBtSL/xvMOtJz9Io0=
+		SIhS1yrF+uW6qYK6LittF8LYZL8=
 		</data>
 		<key>www/js/infoCliente.js</key>
 		<data>
-		R6pdhxFSG6PvzManqsl2BktAACc=
+		hOF86nSbwurOECiTahEpuSil7/Q=
 		</data>
 		<key>www/js/login.js</key>
 		<data>
-		jCNHjpi4/U09xKgony2hUW5nEB4=
+		O+bA5x2ovT3B6Yn57TqeY0fP4EE=
 		</data>
 		<key>www/js/main.js</key>
 		<data>
-		6nEeLSuOuSDEjdezJSzuGLIRS94=
+		+75rcEpHNf4teHLvKZ3aJnwXxrg=
 		</data>
 		<key>www/js/monitorPosicion.js</key>
 		<data>
@@ -590,11 +590,11 @@
 		</data>
 		<key>www/js/operacionesRest.js</key>
 		<data>
-		RCwo70GfpD+4nuckd/fKXXI8OuU=
+		pjMDh9FomqPcm1nlXJyGVfdYyCs=
 		</data>
 		<key>www/js/productosCliente.js</key>
 		<data>
-		L4nKZj2esNk6Ysyc11dQMZyWKGM=
+		kYFT0wl/aebX/rL5zq6HphfaQ/w=
 		</data>
 		<key>www/js/validacionesLogin.js</key>
 		<data>
@@ -718,7 +718,7 @@
 		</data>
 		<key>www/plugins/cordova-plugin-mfp/worklight/checksum.js</key>
 		<data>
-		A2NBJ2x90RwwP3Rw2YkHSWmYLCg=
+		zsHhg0ePFsVcMgbXaLN2KHWWc6o=
 		</data>
 		<key>www/plugins/cordova-plugin-mfp/worklight/messages/de/messages.json</key>
 		<data>
@@ -817,22 +817,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gBBsIvcNEVEQzoH4RwL4+kh0cPs=
+			AE2G3iFfVsrXNaT0ZhE0sXJcqnY=
 			</data>
 			<key>hash2</key>
 			<data>
-			uQyH7bqSnogJGXEQkApIyiViQbVnx/JzKKlv+vfk0sQ=
+			H9zBQotXjrYmikdWzaN85clzhdPd7tkAsgXCWOcmcUM=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YMThu5MxIWdVxzT13C7UOD6B0HQ=
+			wwOIbRuDFy2ZzAGbpzxlihin4lA=
 			</data>
 			<key>hash2</key>
 			<data>
-			kxMf8IXlAJI2rYdJU77Kl7PcNnk5IixhirQrg/xen3E=
+			fFXs1/MwWTk4XeMkDYXWpKg8Gp4n0ts+DMfmJ4iQVag=
 			</data>
 		</dict>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
@@ -850,11 +850,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yydhG1oz8ZZhAMkvJPNqfp/wgac=
+			dyOo4GqXiDN5L9aKo2oYMmDoTiU=
 			</data>
 			<key>hash2</key>
 			<data>
-			lJ+mjv+HhtS1n3JQBRmvJ8SZ2AB5nC+laNb3qKXIPMQ=
+			uUhp8/Pung1NwrqV/AX4stfQ18yRe4pvYEMGwPL+Sjg=
 			</data>
 		</dict>
 		<key>CDVNotification.bundle/beep.wav</key>
@@ -1125,11 +1125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MS4KJ/RNnSgEPAffJSuzrK3mzHg=
+			AdebGXQlupvbuyit43wMMbhME78=
 			</data>
 			<key>hash2</key>
 			<data>
-			vHH3BnQEDobf3d/cFlKZu7KRlyo2WSpwsGHDH8hCtT4=
+			mPw0a+2aa4IeW4ci9T9gmmVt7KAqizxXTtH79k31SXE=
 			</data>
 		</dict>
 		<key>Frameworks/IBMMobileFirstPlatformFoundation.framework/Info.plist</key>
@@ -1413,11 +1413,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PcR32kSv/PalWW9E9kpjWg6zRTA=
+			9UQ9ngUaYKfROzAXXLVzZitxOis=
 			</data>
 			<key>hash2</key>
 			<data>
-			u0Qe3HJBILQ7VIFVbDQRLeFu1nEzv33rK4cm+VTlCF8=
+			qbjIpkHlN08TxBo8goSvmO8M/2mYBwL95a9SLaAQfA0=
 			</data>
 		</dict>
 		<key>config.xml</key>
@@ -1435,22 +1435,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lnX+iKG01moym81ElvinOqyIOMM=
+			yWRB4qwIymRK50SXcrWvqHpZj5A=
 			</data>
 			<key>hash2</key>
 			<data>
-			7hXqEaCJtusuxH7CIKQuj0uE31JhMqRovirJnm/5rfc=
+			jpRLph32GmhYNdldaVr2sPW4lHZB8V7GYiH5bVQtMGI=
 			</data>
 		</dict>
 		<key>mfpclient.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y5XR6P1bhT1bMZZZxBUUq/xoObQ=
+			XqerqtSU/a72/rNPf4oz8Gv0Ng4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nqVHqQWYT+6pWrOPC9Eu8+haNzxj2O/jjqeipmh6Ki4=
+			yHQxAEkLmoQhfqMvMByY/TWuT+4dmIkS+BTYZRJZQ7s=
 			</data>
 		</dict>
 		<key>www/cordova-js-src/exec.js</key>
@@ -1688,22 +1688,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jkBB4OeBLBeOjL+lJ6ndgZqo2Pc=
+			CH0MsEDg8/pOvO0PI8zo3Rd1dSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dsrqy8ru38eGpbLTwNzOofF/20D7uRvHtJmVZk8HpxI=
+			60JWpnRYwHFv+Bi5oDo0jTO15luJ2aOvC+2TYnMcibo=
 			</data>
 		</dict>
 		<key>www/html/main.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VoEGqowr3hDSyy0ZQyvp4inuZis=
+			uqDbHCAaRzMEEZoLjhP8SA2MKL4=
 			</data>
 			<key>hash2</key>
 			<data>
-			W9su05ZJdl7nEMVUzrwrSzdDGXPny0vGhN8u2tcbJ1o=
+			mlrBTXHJVNG5EluB08U/07MYMrlmsS48OY0vyZLIVgU=
 			</data>
 		</dict>
 		<key>www/html/productosCliente.html</key>
@@ -2183,44 +2183,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gcdXNUow47PBtSL/xvMOtJz9Io0=
+			SIhS1yrF+uW6qYK6LittF8LYZL8=
 			</data>
 			<key>hash2</key>
 			<data>
-			m5NRCGgjxddltoMzbU/BWVXfjOEg3dsuaai+Q1BQOxw=
+			6ggJLcOYN/2ZUQKuofJyBFGPaRR8oOwBrBdlORc+TPI=
 			</data>
 		</dict>
 		<key>www/js/infoCliente.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R6pdhxFSG6PvzManqsl2BktAACc=
+			hOF86nSbwurOECiTahEpuSil7/Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			evfj/B6FEAH5OT1r6ARCSX7l3R3hkLQP5TBUiecN/94=
+			AtFx0pd9CQbJOypGr5kNa1lD4UMw4MWX5oYKmFxMypo=
 			</data>
 		</dict>
 		<key>www/js/login.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jCNHjpi4/U09xKgony2hUW5nEB4=
+			O+bA5x2ovT3B6Yn57TqeY0fP4EE=
 			</data>
 			<key>hash2</key>
 			<data>
-			mjRFDHn0Wo4Cy9LRjPKpIMifPQ6hBLw4RUnTehAgvvQ=
+			I3ar6h3vCdLVChcMjYw9aTpXBeADxR4/b77liA6RpIQ=
 			</data>
 		</dict>
 		<key>www/js/main.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6nEeLSuOuSDEjdezJSzuGLIRS94=
+			+75rcEpHNf4teHLvKZ3aJnwXxrg=
 			</data>
 			<key>hash2</key>
 			<data>
-			JsLv/9oh63QhxOSS2pVAK3u4iUWm+qr5ZbNCjhTg2zc=
+			JizEMaHw3N0P5iDSOkHZECD1LsAMZMMWHuG/ed4PTbE=
 			</data>
 		</dict>
 		<key>www/js/monitorPosicion.js</key>
@@ -2238,22 +2238,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RCwo70GfpD+4nuckd/fKXXI8OuU=
+			pjMDh9FomqPcm1nlXJyGVfdYyCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			WnsSBz+yb5WC18D1qRa9XKhrd+OJgb29RX17GPuJ25g=
+			kcRE1eFJIvhb/X7gF9ur+5E3ThdBGFCdodFPDCz0bGk=
 			</data>
 		</dict>
 		<key>www/js/productosCliente.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L4nKZj2esNk6Ysyc11dQMZyWKGM=
+			kYFT0wl/aebX/rL5zq6HphfaQ/w=
 			</data>
 			<key>hash2</key>
 			<data>
-			5N8VMfP3+ZMyk8oxROZcMY692LOhUVlUeELqHj75tYA=
+			OS96+h8gwqiGsvAtBI/TipaxloxWA09YdtxV0VG1LYA=
 			</data>
 		</dict>
 		<key>www/js/validacionesLogin.js</key>
@@ -2590,11 +2590,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A2NBJ2x90RwwP3Rw2YkHSWmYLCg=
+			zsHhg0ePFsVcMgbXaLN2KHWWc6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			/oAkVl5Cy9DK0hevH6npinFHdMtA8FQ7e1qcM3xMgbo=
+			dPRU5lmyyVjNVW3w6eeTbMh4ZOoMT8OliF5+UxBruO0=
 			</data>
 		</dict>
 		<key>www/plugins/cordova-plugin-mfp/worklight/messages/de/messages.json</key>

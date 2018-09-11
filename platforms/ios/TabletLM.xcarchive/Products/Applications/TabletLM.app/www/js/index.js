@@ -33,7 +33,8 @@ function getFileSuccess(fileEntry) {
   fileEntry.file(function(file) {
                  var reader = new FileReader();
                  reader.onloadend = function(e) {
-                 console.log("Numero de Serie: " + this.result);
+                 //console.log("Numero de Serie: " + this.result);
+                 console.log("Numero de serie");
                  var serialNumber = this.result;
                  sessionStorage.setItem("numeroSerie", serialNumber);
                  setVersionConsole();
@@ -55,7 +56,8 @@ function salir(){
   cerrarSesion().then(
     function(response) {
      
-      console.log(response);
+      //console.log(response);
+      console.log("Cerrar sesion trae respuesta");
       var responseJSON = response.responseJSON;
       if (responseJSON.Id === 'SEG0001') {
            sessionStorage.removeItem("idUsuario")

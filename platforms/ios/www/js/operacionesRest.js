@@ -134,4 +134,17 @@ function errorPromise(error) {
     } else {
       document.getElementById('msjError').innerHTML = 'El servicio no esta disponible, favor de intentar mas tarde';
     }
-  }
+}
+
+function mascaraNumeroCuenta(numCtaSel) {
+
+    const tamNumCta = numCtaSel.length;
+    const numCta_aux = numCtaSel.substring(tamNumCta - 4, tamNumCta);
+    var numCuenta_show = '';
+    for(var i = 0 ;i<tamNumCta-4; i++){
+        var numCuenta_show = '\u2022' + numCuenta_show;
+    }
+    numCuenta_show = numCuenta_show + numCta_aux;
+
+    return numCuenta_show;
+}

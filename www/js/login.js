@@ -38,7 +38,8 @@ $(document).ready(function(){
     var usr = document.getElementById("txtUsr").value; 
     identificaEmpleado( usr).then(
       function(resp) {
-        console.log(resp);
+        // console.log(resp);
+        console.log("Respuesta del login");
          var resp_json = resp.responseJSON;
          if (resp_json.Id === 'SEG0001') {
             consultaEmpleado(usr, pass);
@@ -59,7 +60,8 @@ $(document).ready(function(){
 
    consultaDatosEmpleado(idEmpleado).then(
       function(resp1) {
-        console.log(resp1);
+        // console.log(resp1);
+        console.log("Consulta datos cliente trae respuesta");
           var resp1_json = resp1.responseJSON;
           if (resp1_json.Id === 'SEG0001') {
                     if(resp1_json.ArrayGrupos == "No pertenece a ningun grupo"){
@@ -92,7 +94,8 @@ function  autenticaUsuario(respuestaUsuario) {
     autenticEmpleado(respuestaUsuario).then(
       function(resp2) {
           var resp2_json = resp2.responseJSON;
-          console.log(resp2);
+          // console.log(resp2);
+          console.log("Autenticacion empleado trae respuesta");
           if (resp2_json.Id === 'SEG0001') {
             // mandar a llamar TC con relacion idUsuario, CR y cordenadas
             $("#pageBody").load("html/main.html");

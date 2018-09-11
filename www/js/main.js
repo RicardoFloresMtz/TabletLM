@@ -23,7 +23,7 @@ function getPerfilEmpleadoMain(){
                 document.getElementById("p_infoEmpleado").innerHTML = jsonData.NombreUsuario +"<br>" + sessionStorage.getItem("idUsuario");
 
         },function(error){
-            console.log(error);
+           // console.log(error);
             $('#modal_please_wait').modal('hide');
             $('#errorModal').modal('show');
             if (error.errorCode === 'API_INVOCATION_FAILURE') {
@@ -34,6 +34,15 @@ function getPerfilEmpleadoMain(){
         }
     );
 }
+
+function detectarEnter(event){
+ var tecla = event.which || event.keyCode;
+ // console.log("Numero de tecla" + tecla);
+ if(tecla === 13){
+    getInfoCliente();
+ }
+}
+
 
  function validaEntrada(){
         
@@ -140,7 +149,7 @@ function getDatosClientePRS64(data, opc) {
             var tam_arrayClientes = arrayClientes.length;
             if(tam_arrayClientes > 0){
                 console.log("entra a getDatosClientePRS64");
-                console.log(arrayClientes);
+                // console.log(arrayClientes);
                 $("#modalPageBody").load("html/infoCliente.html");
                 setTimeout(function(){
                     showDataCliente(arrayClientes);
@@ -157,7 +166,7 @@ function getDatosClientePRS64(data, opc) {
         }
     }, function(error){
         $("#modal_please_wait").modal("hide");
-        console.log(error);
+        // console.log(error);
     });
 }
 
@@ -185,7 +194,7 @@ function validaTexto(){
                     $(".error").fadeOut().remove();
                 }else{
                     $("#txtFind").addClass("error-margin");
-                    console.log("No es Sic, num tarjeta ni numero de cuenta");
+                     console.log("No es Sic, num tarjeta ni numero de cuenta");
                 }
                 document.getElementById("lbSugerencia").innerHTML = "Puedes localizar clientes por numero de tarjeta, numero de cliente o nombre completo";
             }else{

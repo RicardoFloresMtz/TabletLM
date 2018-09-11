@@ -1,6 +1,6 @@
 function showDataCliente(arrayClientes){
     console.log("entra a showDataCliente");
-    console.log(arrayClientes);
+    //console.log(arrayClientes);
    
     var tam_arrayClientes = arrayClientes.length;
     var visiblepages;
@@ -35,7 +35,9 @@ function showDataCliente(arrayClientes){
         });
     //}
     document.getElementById("tituloModalOperaciones").innerHTML = "Identifica al Cliente";
+    document.getElementById('paginadorCliente').style = "display:block";
     $('#modalOperaciones').modal('show');
+    
 }
 
  function showDatosClientSelect( clienteSelect){
@@ -44,3 +46,4 @@ function showDataCliente(arrayClientes){
     document.getElementById("lbRFC").innerHTML= clienteSelect.RFCCliente;
     document.getElementById("lbDomicilio").innerHTML = clienteSelect.Domicilio +  ", " + clienteSelect.Colonia +  ", " + clienteSelect.CodigoPostal;
 }
+
