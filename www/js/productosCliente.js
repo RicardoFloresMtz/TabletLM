@@ -81,3 +81,4 @@ function crearLista(producto) {
     var div = document.getElementById("listaProductos");
     div.appendChild(ul);
 }
+

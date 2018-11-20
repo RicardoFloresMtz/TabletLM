@@ -1,7 +1,7 @@
 {
-  "name": "com.banorte.cordova.tablet",
-  "displayName": "TabletLM",
-  "version": "1.0.0",
+  "name": "com.banorte.cordova.tableta",
+  "displayName": "TabletLM1",
+  "version": "1",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {

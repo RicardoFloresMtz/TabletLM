@@ -1,0 +1,67 @@
+<div class="row" style="height: 100%;">
+    <div class="col-sm-12" align="center" style="height: 10%;">
+        <label class="label_titlered">&Uacute;nicamente puedes contultar cuentas vista</label>
+    </div>
+    <br>
+    <div class="col-sm-12" style="height: 90%;">
+    <div class="label_datainfo" style="height: 10%;">N&uacute;mero de cuenta o pl&aacute;stico 
+            <input type="number" style="margin-left: 3% !important; height: 55px " id="numCuenta" onblur="obtenerCuenta()">
+    
+    </div>
+
+    <br>
+        <div class="label_datainfo" style="height: 7%;">Selecciona el periodo de b&uacute;squeda</div>
+        <br>
+
+        <form action="" class="label_datainfo" style="height: 15%; margin-left: 4% !important;" onchange="obtenerPeriodo()">
+            
+                    <label class="container">&Uacute;ltimo mes (incluyendo el d&iacute;a de hoy)
+                    <input type="radio" name="radio"  value="1">
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="container">Hist&oacute;rico (periodo m&aacute;ximo: 3 meses)
+                    <input type="radio" name="radio" value="2">
+                    <span class="checkmark"></span>
+                  </label>
+            
+        </form>
+
+        <br>
+        <div style="height: 35%;">
+                <div class="col-sm-6 label_datainfo" style="height: 10%;">Del: 
+                    <!-- <input type="text" style="height: 55px !important; width: 80% !important;" id="fechaInicial" name="fechaInicial"> -->
+                    <div class='input-group date' id='datetimepicker5' style="height: 55px !important; width: 80% !important;">
+                            <input type='text' class="form-control"  id="fechaInicial" name="fechaInicial"/>
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#fechaInicial').datetimepicker({
+                                    defaultDate: "11/1/2013",
+                                    disabledDates: [
+                                        moment("12/25/2013"),
+                                        new Date(2013, 11 - 1, 21),
+                                        "11/22/2013 00:53"
+                                    ]
+                                });
+                            });
+                        </script>
+                </div>
+                
+
+                <div class="col-sm-6 label_datainfo" style="height: 10%;"> Al: <input type="text" style="height: 55px !important; width: 80% !important;" id="fechaFinal" name="fechaFinal"></div>
+        </div>
+        
+
+        <br>
+        <div align="center">
+                <!-- <button type="btn" class="btn btn-lg btn_entrar" id="btnLogin" disabled="true" onclick="LogIn()">Entrar</button> -->
+            <button id="salir" class="btn btn-lg btn_entrar" onclick="consultarMovimientosPeticion()" style="width: 300px !important;">Consultar</button>
+        </div>
+        
+    </div>
+
+        
+</div>

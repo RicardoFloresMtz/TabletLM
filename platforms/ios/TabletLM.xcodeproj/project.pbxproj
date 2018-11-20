@@ -27,12 +27,11 @@
 		A1B5538722D443E792C60B18 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 703F57FB955946D89F669E3F /* CDVNotification.m */; };
 		B67122B4AF1B4CE5951DB9CD /* Localizations.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1FF05FA703C24E0FA0DA10E5 /* Localizations.bundle */; };
 		B9995B3D0A8A4CA4A22176EB /* CDVDeviceName.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D93F1D5D4F24FFF9EA2464E /* CDVDeviceName.m */; };
-		D1D512C1864C49DCBF96FA8D /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BECBC3244204F56B7DFD78C /* libstdc++.6.tbd */; };
 		E8B97636F57B4DD7A49D5F5C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3EB1724F9D4A929E5F410E /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EC5D8021AA5F4934AA44B753 /* CDVGlobalization.m in Sources */ = {isa = PBXBuildFile; fileRef = B3C6BCC2ACD240369AE67773 /* CDVGlobalization.m */; };
-		FA021878F6514DD2AD1D27B1 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71A010AB0214F6F8F827006 /* IBMMobileFirstPlatformFoundation.framework */; };
-		F0BC3104BF9B4BF09587A361 /* IBMMobileFirstPlatformFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A71A010AB0214F6F8F827006 /* IBMMobileFirstPlatformFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		02C0452742FD416F9BD61168 /* IBMMobileFirstPlatformFoundationHybrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE9EFA345884BD6BBB8BD0E /* IBMMobileFirstPlatformFoundationHybrid.framework */; };
+		FAE2D4F41F8F43578C94429B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25FBCF395FF498B9808B7D5 /* IBMMobileFirstPlatformFoundation.framework */; };
+		B9516758F0EB4A6B98E9199A /* IBMMobileFirstPlatformFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25FBCF395FF498B9808B7D5 /* IBMMobileFirstPlatformFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E3F016F4C9E14EE4A7966059 /* IBMMobileFirstPlatformFoundationHybrid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150E978E8825408EB3200038 /* IBMMobileFirstPlatformFoundationHybrid.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F0BC3104BF9B4BF09587A361 /* IBMMobileFirstPlatformFoundation.framework in Embed Frameworks */,
+				B9516758F0EB4A6B98E9199A /* IBMMobileFirstPlatformFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,8 +118,8 @@
 		EC8D1D053B0B41C4AD24E630 /* CDVNotification.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = CDVNotification.bundle; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = TabletLM/config.xml; sourceTree = "<group>"; };
-		A71A010AB0214F6F8F827006 /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; name = "IBMMobileFirstPlatformFoundation.framework"; path = "TabletLM/Plugins/cordova-plugin-mfp/IBMMobileFirstPlatformFoundation.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		0CE9EFA345884BD6BBB8BD0E /* IBMMobileFirstPlatformFoundationHybrid.framework */ = {isa = PBXFileReference; name = "IBMMobileFirstPlatformFoundationHybrid.framework"; path = "TabletLM/Plugins/cordova-plugin-mfp/IBMMobileFirstPlatformFoundationHybrid.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		D25FBCF395FF498B9808B7D5 /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; name = "IBMMobileFirstPlatformFoundation.framework"; path = "TabletLM/Plugins/cordova-plugin-mfp/IBMMobileFirstPlatformFoundation.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		150E978E8825408EB3200038 /* IBMMobileFirstPlatformFoundationHybrid.framework */ = {isa = PBXFileReference; name = "IBMMobileFirstPlatformFoundationHybrid.framework"; path = "TabletLM/Plugins/cordova-plugin-mfp/IBMMobileFirstPlatformFoundationHybrid.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,13 +129,12 @@
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				E8B97636F57B4DD7A49D5F5C /* AudioToolbox.framework in Frameworks */,
-				D1D512C1864C49DCBF96FA8D /* libstdc++.6.tbd in Frameworks */,
 				0F9023E0C3B94329900C02FD /* libz.tbd in Frameworks */,
 				89A4B1E4082E42E98112B975 /* libc++.tbd in Frameworks */,
 				193749F76C90491E8ADE2C59 /* Security.framework in Frameworks */,
 				4D9F3A29697242C39598855F /* SystemConfiguration.framework in Frameworks */,
-				FA021878F6514DD2AD1D27B1 /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
-				02C0452742FD416F9BD61168 /* IBMMobileFirstPlatformFoundationHybrid.framework in Frameworks */,
+				FAE2D4F41F8F43578C94429B /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
+				E3F016F4C9E14EE4A7966059 /* IBMMobileFirstPlatformFoundationHybrid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +214,8 @@
 				389DF8FC0324440BA7786E3A /* libc++.tbd */,
 				E41BFF51441F404B88AB8437 /* Security.framework */,
 				9DC8DC789E534519B53B58AC /* SystemConfiguration.framework */,
-				A71A010AB0214F6F8F827006 /* IBMMobileFirstPlatformFoundation.framework */,
-				0CE9EFA345884BD6BBB8BD0E /* IBMMobileFirstPlatformFoundationHybrid.framework */,
+				D25FBCF395FF498B9808B7D5 /* IBMMobileFirstPlatformFoundation.framework */,
+				150E978E8825408EB3200038 /* IBMMobileFirstPlatformFoundationHybrid.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -306,7 +304,22 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 4939859LU6;
+						DevelopmentTeam = 9WW894T2K9;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -422,8 +435,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 4939859LU6;
+				DEVELOPMENT_TEAM = 9WW894T2K9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"TabletLM/Plugins/cordova-plugin-mfp\"",
@@ -435,9 +450,11 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "TabletLM/TabletLM-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.banorte.cordova.tableta;
 				PRODUCT_NAME = TabletLM;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -451,8 +468,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 4939859LU6;
+				DEVELOPMENT_TEAM = 9WW894T2K9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"TabletLM/Plugins/cordova-plugin-mfp\"",
@@ -462,9 +481,11 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "TabletLM/TabletLM-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.banorte.cordova.tableta;
 				PRODUCT_NAME = TabletLM;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;

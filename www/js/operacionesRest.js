@@ -52,6 +52,25 @@ function searchClient(data,opc){
     return resourceRequest.sendFormParameters(formParameters);
 }
 
+function consultaMovimientos(cuenta, fechaDesde, fechaHasta) {
+
+    var formParameters = {
+        cuenta: cuenta, 
+        fechaDesde: fechaDesde,
+        fechaHasta: fechaHasta
+    };
+
+    var resourceRequest = new WLResourceRequest(
+
+        'adapters/AdapterBanorteTabletLM/resource/consultaMovimientos',
+        WLResourceRequest.POST);
+    resourceRequest.setTimeout(30000);
+
+    return resourceRequest.sendFormParameters(formParameters);
+}
+
+
+
 
 
 function autenticEmpleado(respUsuario) {

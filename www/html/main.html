@@ -1,142 +1,144 @@
+
 <script>
-        $.getScript("js/collapse.js");
-        $.getScript("js/main.js");
-        $.getScript("js/infoCliente.js");
-        $.getScript("js/productosCliente.js");
+    $.getScript("js/collapse.js");
+    $.getScript("js/main.js");
+    $.getScript("js/infoCliente.js");
+    $.getScript("js/productosCliente.js");
+    $.getScript("js/movimientosSaldo.js");
 </script>
 
 <div class="wrapper ">
-        <nav id="sidebar">
-                <!-- Sidebar Header -->
-                <div class="col-sm-12 altura_general" style="background-color: rgb(31, 28, 28);">
-                        <div class="row" style="height: 5%;"> </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 " align="center">
-                                    <img src="img/GFB-logo.png" alt="Grupo Financiero BANORTE." style="width: 100%;">   
-                            </div>
-                        </div>
-                        <div class="row" style="height: 5%;"> </div>
-                        <div class="row" align="center">
-                                <div class="col-xs-12 col-sm-12 ">
-                                        <img src="img/user.png" alt="Grupo Financiero BANORTE." style="width: 43%;">
-                                    </div>  
-                        </div>
-                        <div class="row">
-                                <div class="col-xs-12 col-sm-12 lageneral-profile-collapse " align="center">
-                                    <p id="p_infoEmpleado">
-                                    </p>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-xs-12  col-sm-12 ">
-                                    <hr class="hr-collapse">
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class=" col-xs-12 col-sm-12 " align="left">
-                                    <h4>Menu</h4>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class=" col-xs-6 col-sm-6" align="right" style=" padding-right: 0%;">
-                                        <img src="img/saldo.png" alt="Grupo Financiero BANORTE." style=" width: 60%;" onclick="goSaldos()">
-                                </div>
-                                <div class=" col-xs-6 col-sm-6 lageneral-profile-collapse" align="left" style="  padding-top: 10%;padding-left: 0%;">
-                                    <a  style="color: rgb(255, 255, 255)" onclick="goSaldos()">Movimientos</a>
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class=" col-xs-6 col-sm-6" align="right" style="  padding-right: 0%;">
-                                        <img src="img/saldo.png" alt="Grupo Financiero BANORTE." style=" width: 60%;" onclick="goAutoriza()">
-                                </div>
-                                <div class=" col-xs-6 col-sm-6 lageneral-profile-collapse" align="left" style="  padding-top: 10%;padding-left: 0%;">
-                                    <a  style="color: rgb(255, 255, 255)" onclick="goAutoriza()">Autorizar</a>
-                                </div>
-                        </div>
-                        <div class="row" style=" height: 20%;">
-                                <div class=" col-xs-12 col-sm-12 ">
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class=" col-xs-12 col-sm-12 ">
-                                        <hr class="hr-collapse">
-                                </div>
-                        </div>
-                        <div class="row">
-                                <div class="col-xs-6 col-sm-6 " align="right" style="  padding-right: 0%;">
-                                        <img src="img/logout.png" alt="Grupo Financiero BANORTE." style="width: 50px;" onclick="salir()">   
-                                </div>
-                                <div class=" col-xs-6 col-sm-6 lageneral-profile-collapse" align="left" style=" padding-top: 6%;padding-left: 0%;">
-                                        <a  style="color: rgb(255, 255, 255)" onclick="salir()">Salir</a>
-                                    </div>
-                        </div>
-                    
-                </div>
-        </nav>
-    <div id="content" style="width: 100%; background-image: url(img/bg_gr_01.png)" >
-                <div class="row row_womargin" style="background-color: rgb(255, 255, 255);height: 2%;"></div>
-                <div class="row row_womargin" style="background-color: rgb(255, 255, 255)">
-                    <div class="col-xs-1 col-sm-1" align="center">
-                                <img src="img/expand.png" id="sidebarCollapse" alt="Grupo Financiero BANORTE." style="width: 45px;">   
-                    </div>
-                    <div class="col-xs-1 col-sm-1" align="center">
-                            <img src="img/find.png"  alt="Grupo Financiero BANORTE." style="width: 100%;"  onclick="getInfoCliente()" > 
-                    </div>
-                    <div class="col-xs-5 col-sm-5" >
-                        <input type="text" id="txtFind" class="input_main_find" placeholder="Localiza cliente" oninput="validaTexto()" maxlength="62" onkeydown="detectarEnter(event)">
-                    </div>
-                    <div class="col-xs-1 col-sm-1" align="right">
-                                <img src="img/ticket.png"  alt="Grupo Financiero BANORTE." style="width: 100%;padding-right: 0%;"  onclick="goEmitTicket()" > 
-                    </div>
-                    <div class="col-xs-1 col-sm-1" align="left" style="padding-left: 0%;">
-                                <a class="a_barfind" onclick="goEmitTicket()">Turno  Nuevo</a>
-                    </div>
-                    <div class="col-xs-2 col-sm-3" align="center">
-                                <a class="a_barfind" onclick="goNotificaciones()">Notificaciones</a>
-                    </div>
-                </div>
-                <div class="row row_womargin">
-                        <div class="col-xs-1 col-sm-1"></div>
-                        <div class=" col-xs-11 col-sm-11">
-                                <p class="label_sugerencia" id="lbSugerencia"> Puedes localizar clientes por numero de tarjeta, numero de cliente o nombre completo</p> 
-                            </div>
-                </div>
-        
-        </div>
- </div>
- 
-     <!-- Modal -->
-     <div class="modal fade in" id="modalOperaciones" role="dialog" style="padding-top: 2%; padding-bottom: 3%;  padding-left: 0px;">
-            <div class="modal-dialog" style="height: 100%;">
+    <nav id="sidebar">
+        <!-- Sidebar Header -->
+        <div class="col-sm-12 altura_general" style="background-color: rgb(31, 28, 28);">
+            <div class="row" style="height: 5%;"> </div>
             <div class="row">
-                    <div class="col-xs-12 col-sm-12" style=" padding-left: 96%;" align="right">
-                            <img src="img/close.png" alt="Grupo Financiero BANORTE." style="width: 50px;" data-dismiss="modal">
-                    </div>
+                <div class="col-xs-12 col-sm-12 " align="center">
+                    <img src="img/GFB-logo.png" alt="Grupo Financiero BANORTE." style="width: 100%;">
+                </div>
             </div>
-                <!-- Modal content-->
-              <div class="modal-content" style="height: 80%;">
-                    <div class="modal-header" style=" height: 11%; padding: 0%;background-color: black;">
-                           <div class="row" style=" height: 10%;"> </div>
-                           <div class="row">
-                               <div class="col-xs-2 col-sm-2" align="center">
-                                    <img src="img/profile.png" alt="Grupo Financiero BANORTE." style=" width: 65%;">
-                               </div>
-                               <div class="col-xs-8 col-sm-10" align="center" style="padding-left: 0%">
-                                   <h2 class="h2_title" id="tituloModalOperaciones">Identifica al Cliente</h2>
-                               </div>
-                               
-                           </div>     
+            <div class="row" style="height: 5%;"> </div>
+            <div class="row" align="center">
+                <div class="col-xs-12 col-sm-12 ">
+                    <img src="img/user.png" alt="Grupo Financiero BANORTE." style="width: 43%;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 lageneral-profile-collapse " align="center">
+                    <p id="p_infoEmpleado">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12  col-sm-12 ">
+                    <hr class="hr-collapse">
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 " align="left">
+                    <h4>Menu</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-xs-6 col-sm-6" align="right" style=" padding-right: 0%;">
+                    <img src="img/saldo.png" alt="Grupo Financiero BANORTE." style=" width: 60%;" onclick="modalSaldos()">
+                </div>
+                <div class=" col-xs-6 col-sm-6 lageneral-profile-collapse" align="left" style="  padding-top: 10%;padding-left: 0%;">
+                    <a style="color: rgb(255, 255, 255)" onclick="modalSaldos()">Movimientos</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-xs-6 col-sm-6" align="right" style="  padding-right: 0%;">
+                    <img src="img/saldo.png" alt="Grupo Financiero BANORTE." style=" width: 60%;" onclick="goAutoriza()">
+                </div>
+                <div class=" col-xs-6 col-sm-6 lageneral-profile-collapse" align="left" style="  padding-top: 10%;padding-left: 0%;">
+                    <a style="color: rgb(255, 255, 255)" onclick="goAutoriza()">Autorizar</a>
+                </div>
+            </div>
+            <div class="row" style=" height: 20%;">
+                <div class=" col-xs-12 col-sm-12 ">
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 ">
+                    <hr class="hr-collapse">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 " align="right" style="  padding-right: 0%;">
+                    <img src="img/logout.png" alt="Grupo Financiero BANORTE." style="width: 50px;" onclick="salir()">
+                </div>
+                <div class=" col-xs-6 col-sm-6 lageneral-profile-collapse" align="left" style=" padding-top: 6%;padding-left: 0%;">
+                    <a style="color: rgb(255, 255, 255)" onclick="salir()">Salir</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <div id="content" style="width: 100%; background-image: url(img/bg_gr_01.png)">
+        <div class="row row_womargin" style="background-color: rgb(255, 255, 255);height: 2%;"></div>
+        <div class="row row_womargin" style="background-color: rgb(255, 255, 255)">
+            <div class="col-xs-1 col-sm-1" align="center">
+                <img src="img/expand.png" id="sidebarCollapse" alt="Grupo Financiero BANORTE." style="width: 45px;">
+            </div>
+            <div class="col-xs-1 col-sm-1" align="center">
+                <img src="img/find.png" alt="Grupo Financiero BANORTE." style="width: 100%;" onclick="getInfoCliente()">
+            </div>
+            <div class="col-xs-5 col-sm-5">
+                <input type="text" id="txtFind" class="input_main_find" placeholder="Localiza cliente" oninput="validaTexto()" maxlength="62" onkeydown="detectarEnter(event)">
+            </div>
+            <div class="col-xs-1 col-sm-1" align="right">
+                <img src="img/ticket.png" alt="Grupo Financiero BANORTE." style="width: 100%;padding-right: 0%;" onclick="goEmitTicket()">
+            </div>
+            <div class="col-xs-1 col-sm-1" align="left" style="padding-left: 0%;">
+                <a class="a_barfind" onclick="goEmitTicket()">Turno  Nuevo</a>
+            </div>
+            <div class="col-xs-2 col-sm-3" align="center">
+                <a class="a_barfind" onclick="goNotificaciones()">Notificaciones</a>
+            </div>
+        </div>
+        <div class="row row_womargin">
+            <div class="col-xs-1 col-sm-1"></div>
+            <div class=" col-xs-11 col-sm-11">
+                <p class="label_sugerencia" id="lbSugerencia"> Puedes localizar clientes por numero de tarjeta, numero de cliente o nombre completo</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade in" id="modalOperaciones" role="dialog" style="padding-top: 2%; padding-bottom: 3%;  padding-left: 0px;">
+    <div class="modal-dialog" style="height: 100%;">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12" style=" padding-left: 96%;" align="right">
+                <img src="img/close.png" alt="Grupo Financiero BANORTE." style="width: 50px;" data-dismiss="modal">
+            </div>
+        </div>
+        <!-- Modal content-->
+        <div class="modal-content" style="height: 80%;">
+            <div class="modal-header" style=" height: 11%; padding: 0%;background-color: black;">
+                <div class="row" style=" height: 10%;"> </div>
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2" align="center">
+                        <img src="img/profile.png" alt="Grupo Financiero BANORTE." style=" width: 65%;">
                     </div>
-                    <div class="modal-body" style=" height: 90%;">
-                        <div id="modalPageBody" class="modal_pagebody"> </div>
+                    <div class="col-xs-8 col-sm-10" align="center" style="padding-left: 0%">
+                        <h2 class="h2_title" id="tituloModalOperaciones">Identifica al Cliente</h2>
                     </div>
-                    <div class="modal-footer modal-footer-aux" style=" height: 10%;">
-                            <div class="row" id="paginadorCliente"> 
-                                    <div class="col-xs-12 col-sm-12" align="center">
-                                            <ul id="pagination-demo" class="pagination-sm"></ul>
-                                    </div>
-                            </div>
+
+                </div>
+            </div>
+            <div class="modal-body" style=" height: 90%;">
+                <div id="modalPageBody" class="modal_pagebody"> </div>
+            </div>
+            <div class="modal-footer modal-footer-aux" style=" height: 10%;">
+                <div class="row" id="paginadorCliente">
+                    <div class="col-xs-12 col-sm-12" align="center">
+                        <ul id="pagination-demo" class="pagination-sm"></ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
