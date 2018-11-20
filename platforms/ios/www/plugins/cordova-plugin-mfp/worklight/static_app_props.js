@@ -13,4 +13,4 @@ WL.StaticAppProps = { APP_ID: 'com.banorte.cordova.tableta',
   APP_DISPLAY_NAME: 'TabletLM',
   LOGIN_DISPLAY_TYPE: 'embedded',
   mfpClientCustomInit: false,
-  MESSAGES_DIR: 'plugins/cordova-plugin-mfp/worklight/messages' };
+  MESSAGES_DIR: 'plugins\\cordova-plugin-mfp\\worklight\\messages' };

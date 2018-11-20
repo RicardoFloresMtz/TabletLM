@@ -19,7 +19,11 @@
 	<key>wlSecureDirectUpdatePublicKey</key>
 	<string></string>
 	<key>buildtime</key>
+<<<<<<< HEAD
 	<string>1542409050147</string>
+=======
+	<string>1541613135840</string>
+>>>>>>> 7d9d853d7aea1e5cc20ba88a9c0a98133cf49f77
 	<key>languagePreferences</key>
 	<string>en</string>
 </dict>
